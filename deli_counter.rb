@@ -5,8 +5,11 @@ def line(place)
   if place.length == 0
     puts "The line is currently empty."
   else
-    place.each.with_index(1) do |name, index|
-      line_array.push("#{index}, #{name}")
+    message = "The line is currently:"
+    
+    place.each.with_index do |name, index|
+      message += " #{index.to_i+1}. #{name}"
+      
     end
     puts "The line is currently: #{line_array.join(" ")}"
     
