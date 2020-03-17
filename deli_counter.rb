@@ -16,7 +16,8 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, "Ada")
-  puts "Welcome, Ada. You are number #{index.to_i+1} in line"
+def take_a_number(katz_deli, name)
+  katz_deli << name
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line"
 end
 
