@@ -11,7 +11,7 @@ def line(place)
       message += " #{index.to_i+1}. #{name}"
       
     end
-    puts "The line is currently: #{line_array.join(" ")}"
+    puts "#{message}"
     
   end
 end
