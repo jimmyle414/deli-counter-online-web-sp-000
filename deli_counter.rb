@@ -2,7 +2,7 @@
 katz_deli = []
 
 def line(katz_deli)
-  if "there is nobody in line"
-    return "line is empty"
+  if katz_deli.length == 0
+    puts "The line is currently empty."
   end
 end
